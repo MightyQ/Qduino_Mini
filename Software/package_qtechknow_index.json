@@ -1,0 +1,46 @@
+{
+   "packages":[
+      {
+         "name":"Qduino Mini",
+         "maintainer":"Qtechknow",
+         "websiteURL":"https://SparkFun.com",
+         "email":"TechSupport@SparkFun.com",
+         "help":{
+            "online":"https://forum.sparkfun.com"
+         },
+         "platforms":[
+            {
+               "name":"Qtechknow Boards",
+               "architecture":"avr",
+               "version":"1.0.0",
+               "category":"Qtechknow",
+               "url":"https://github.com/sparkfun/Qduino_Mini/raw/master/Software/qduinomini.tar.bz2",
+               "archiveFileName":"qduinomini.tar.bz2",
+               "checksum":"SHA-256:722d86c8053b4f5624edd0d784257d6a83b5b57425cee247d8a43622804b0768",
+               "size":"2394237",
+               "help":{
+                  "online":"https://forums.sparkfun.com"
+               },
+               "boards":[
+                  {
+                     "name":"Qduino Mini"
+                  }
+               ],
+               "toolsDependencies":[
+                  {
+                     "packager":"arduino",
+                     "name":"avr-gcc",
+                     "version":"4.8.1-arduino5"
+                  },
+                  {
+                     "packager":"arduino",
+                     "name":"avrdude",
+                     "version":"6.0.1-arduino5"
+                  }
+               ]
+            }
+         ],
+         "tools":[]
+      }
+   ]
+}
