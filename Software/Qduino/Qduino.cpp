@@ -46,62 +46,50 @@ void qduino::setRGB(int r, int g, int b){
     analogWrite(13, b);
 }
 
-void qduino::setRGB(String color){
-    
-    int intcolor;
-    
-    if(color == "red") { intcolor = 1; }
-    if(color == "green") { intcolor = 2; }
-    if(color == "blue") { intcolor = 3; }
-    if(color == "cyan") { intcolor = 4; }
-    if(color == "pink") { intcolor = 5; }
-    if(color == "white") { intcolor = 6; }
-    if(color == "purple") { intcolor = 7; }
-    if(color == "yellow") { intcolor = 8; }
-    if(color == "orange") { intcolor = 9; }
-    
-    switch (intcolor) {
-        case 1:
+void qduino::setRGB(Color color){
+
+        switch (color) {
+        case RED:
             analogWrite(10, 0);
             analogWrite(11, 255);
             analogWrite(13, 255);
             break;
-        case 2:
+        case GREEN:
             analogWrite(10, 255);
             analogWrite(11, 0);
             analogWrite(13, 255);
             break;
-        case 3:
+        case BLUE:
             analogWrite(10, 255);
             analogWrite(11, 255);
             analogWrite(13, 0);
             break;
-        case 4:
+        case CYAN:
             analogWrite(10, 255);
             analogWrite(11, 0);
             analogWrite(13, 0);
             break;
-        case 5:
+        case PINK:
             analogWrite(10, 109);
             analogWrite(11, 255);
             analogWrite(13, 0);
             break;
-        case 6:
+        case WHITE:
             analogWrite(10, 109);
             analogWrite(11, 0);
             analogWrite(13, 0);
             break;
-        case 7:
+        case PURPLE:
             analogWrite(10, 210);
             analogWrite(11, 255);
             analogWrite(13, 0);
             break;
-        case 8:
+        case YELLOW:
             analogWrite(10, 100);
             analogWrite(11, 0);
             analogWrite(13, 255);
             break;
-        case 9:
+        case ORANGE:
             analogWrite(10, 109);
             analogWrite(11, 150);
             analogWrite(13, 255);

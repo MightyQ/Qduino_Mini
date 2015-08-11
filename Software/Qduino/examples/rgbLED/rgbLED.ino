@@ -36,39 +36,39 @@ void loop() {
   
   delay(500);
   
-  q.setRGB("red");
+  q.setRGB(qduino::RED);
   
   delay(500);
   
-  q.setRGB("orange");
+  q.setRGB(qduino::ORANGE);
   
   delay(500);
   
-  q.setRGB("yellow");
+  q.setRGB(qduino::YELLOW);
 
   delay(500);
   
-  q.setRGB("green");
+  q.setRGB(qduino::GREEN);
   
   delay(500);
   
-  q.setRGB("cyan");
+  q.setRGB(qduino::CYAN);
   
   delay(500);
   
-  q.setRGB("blue");
+  q.setRGB(qduino::BLUE);
   
   delay(500);
   
-  q.setRGB("purple");
+  q.setRGB(qduino::PURPLE);
   
   delay(500);
   
-  q.setRGB("pink");
+  q.setRGB(qduino::PINK);
   
   delay(500);
   
-  q.setRGB("white");
+  q.setRGB(qduino::WHITE);
   
   delay(500);
   

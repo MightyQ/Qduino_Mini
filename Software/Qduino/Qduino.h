@@ -34,9 +34,21 @@
 class qduino{
     
 public:
+    enum Color : byte {
+        RED = 1,
+        GREEN,
+        BLUE,
+        CYAN,
+        PINK,
+        WHITE,
+        PURPLE,
+        YELLOW,
+        ORANGE
+    };
+
     void setup();
     void setRGB(int r, int g, int b);
-    void setRGB(String color);
+    void setRGB(Color color);
     void rainbow(int duration);
     void ledOff();
     

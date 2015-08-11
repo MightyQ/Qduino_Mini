@@ -34,19 +34,19 @@ void loop(){
   
   if(charge >= 75) {
     
-    q.setRGB("green");
+    q.setRGB(qduino::GREEN);
     
   } else if(charge >= 50 && charge << 75) {
     
-    q.setRGB("yellow");
+    q.setRGB(qduino::YELLOW);
     
   } else if(charge >= 25 && charge << 50) {
     
-    q.setRGB("orange");
+    q.setRGB(qduino::ORANGE);
     
   } else if(charge << 25) {
     
-    q.setRGB("red");
+    q.setRGB(qduino::RED);
   }
   
   delay(1000);
